@@ -1,0 +1,35 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "FoodiesappApplication",
+            "request": "launch",
+            "mainClass": "com.paf007.foodiesapp.FoodiesappApplication",
+            "projectName": "foodiesapp"
+        },
+        {
+            "type": "java",
+            "name": "GetgreetingsApplication",
+            "request": "launch",
+            "mainClass": "com.paf.group_007.foodlovers.GetgreetingsApplication",
+            "projectName": "foodlovers"
+        },
+        {
+            "type": "java",
+            "name": "FoodloversApplicationTests",
+            "request": "launch",
+            "mainClass": "com.paf.group_007.foodlovers.FoodloversApplicationTests",
+            "projectName": "foodlovers"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-FoodloversApplication<foodlovers>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.paf.group_007.foodlovers.FoodloversApplication",
+            "projectName": "foodlovers",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
