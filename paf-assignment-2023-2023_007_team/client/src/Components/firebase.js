@@ -1,7 +1,8 @@
-// Import the functions you need from the SDKs you need
-import firebase from "firebase";
+import firebase from 'firebase/app';
+import 'firebase/auth';
+import 'firebase/storage';
 
-firebase.initializeApp=( {
+const firebaseConfig = {
   apiKey: "AIzaSyDgmSgP-ifGnskiaZAtctc3FRJtdXlpuck",
   authDomain: "cofoodies-directory.firebaseapp.com",
   projectId: "cofoodies-directory",
@@ -9,16 +10,15 @@ firebase.initializeApp=( {
   messagingSenderId: "378852567395",
   appId: "1:378852567395:web:99f2d3f68adfd767070b56",
   measurementId: "G-9YH47EMPGT"
-});
+};
 
 // Initialize Firebase
-const { auth, storage } = firebase;
-firebase.initializeApp();
+firebase.initializeApp(firebaseConfig);
 
-export {auth, storage};
+const auth = firebase.auth();
+const storage = firebase.storage();
 
-
-
+export { auth, storage };
 // // Import the functions you need from the SDKs you need
 // import firebase from './firebase';
 // import config from './firebase.js';
